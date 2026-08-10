@@ -98,8 +98,8 @@ Use Skill: clarify
   （证据：GATE_RULES.md#禁止行为）
 
 - 需读的文件：
-  /Users/liujieliang/Documents/trae_projects/trae/read_code/llm-cli-chat/day09_teaching.py
-  /Users/liujieliang/Documents/trae_projects/trae/read_code/llm-cli-chat/verify/verify_delta_content.py
+  /Users/liujieliang/Documents/trae_projects/trae/read_code/llm-chat/day09_teaching.py
+  /Users/liujieliang/Documents/trae_projects/trae/read_code/llm-chat/verify/verify_delta_content.py
   /Users/liujieliang/Documents/trae_projects/trae/read_code/config/GATE_RULES.md
   /Users/liujieliang/Documents/trae_projects/trae/read_code/config/RULES.md
 
@@ -108,7 +108,7 @@ Use Skill: clarify
   2. 对 DeepSeek 端点写 verify 脚本跑实验，确认 delta.content 是否在所有 chunk 中始终存在
   3. 对 Ollama 端点写 verify 脚本跑实验，确认 delta.content 是否在所有 chunk 中始终存在
   4. 两个实验都跑完后再根据结果决定是否需要给 delta.content 加保护性访问
-  注意：用 Python OpenAI 库分别操作两个端点，验证脚本放 llm-cli-chat/verify/ 目录下。
+  注意：用 Python OpenAI 库分别操作两个端点，验证脚本放 llm-chat/verify/ 目录下。
 
 - 为什么：用实验证据替代文档推断，补全双端点验证覆盖，让 day09_teaching.py 的断言有据可查。
 ```
